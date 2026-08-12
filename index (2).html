@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" id="stylesheet">
+</head>
+<body style="background-color:yellow;">
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: #000;
+}
+/*header*/
+
+title {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* label */
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  height: 38px;
+  overflow-y: hidden;
+  outline-width: none;
+  text-align: center;
+  cursor: pointer;
+  scrollbar-width: none;
+
+  background-color: yellow;
+ 
+}
+
+
+.button a:link, a:visited {  
+  
+  text-align: center;
+
+  text-decoration: none;
+  display: flex;
+  
+  background-color: #04AA6A;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+
+  
+    
+
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 150px;
+  color: yellow;
+  background-color: black;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  font-weight: bold;
+ 
+    
+}
+
+/* floating side button */
+
+.floating-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+}
+
+/* Apply directly to the button/link */
+.floating-container{
+  background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;      /* Equal width */
+    height: 32px;     /* Equal height */
+    border-radius: 50%; /* Makes it a perfect circle */
+    text-decoration: none;
+    
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.floating-container:hover {
+    background-color: yellowgreen;
+}
+
+
+
+
+
+/* Video */
+ video {
+    width: 100%;
+    height: 100vh; /* vh = viewport height */
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Key property for resizing */
+  }
+
+  main {
+    width: 100%;
+    height: 100vh; /* vh = viewport height */
+  }
+  
+  main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Key property for resizing */
+  }
+
+
+</style>
+
+
+  <header id="header" class="header" style="background-color:black;">
+    <div><title style="color: #fff; font-family:Georgia, 'Times New Roman', Times, serif; padding-left: 20px; padding-top: 4vh; font-size: 200%; justify-content: start;">Safety Awareness</title></div>
+    <!-- Here the below Tripleee home is in attributor <a> is using so the background and color is syn to filter label, is same even if any changes a attributor will change to button with js language.-->
+    <div><a href="https://pradeeppp-wq.github.io/Tripleee.docx/"><img style="height: 10ch; justify-content: end; margin: 0%; padding: 0%;padding-top: 10vh;"  target="_parent" src="Tri.home.png" alt=""></div></a>
+  
+  </header>
+
+
+  <!-- Filter label-->  
+  <section id="filter-label" class="button">
+    <div class="box"><a href="#Rules" target="_parent">Rules</a></div>
+    <div class="box"><a href="#Treatment">Treatment</a></div>
+    <div class="box"> <a href="#Signs">Safety-Signs</a></div>
+    <div class="box"><a href="#Fire">Fire</a></div>
+    <div class="box"><a href="#Waste management">Waste management</a></div>
+    <div class="box"><a href="#PPE">PPE</a></div>
+    <div class="box"><a  href="#Rescue operation">Rescue operation</a></div>
+   
+
+  </section>
+
+
+  <!--Rules-->
+  <section id="Rules">
+        <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety rules</h1></div>
+    <div>
+        <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+          <iframe autoplay mute loop src="https://drive.google.com/file/d/1hApHqnYm6lpoq0E1GTeevfw7I0f7hFK5/preview" height="720px" width="100%"></iframe>  
+        </main>
+    </div>
+    </section>
+
+    <!--Treatment-->
+    <section id="Treatment">
+    <div>
+      <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-Treatment for burn injury</h1></div>
+    <div>
+      <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+     <iframe autoplay mute loop src="https://drive.google.com/file/d/17J1lnFjSZQdSo_HSZT7JtYIv38i2F9Oe/preview" height="720px" width="100%"></iframe> 
+      </main>
+   </div>
+  </section>
+  
+  
+  
+  
+  
+<section>
+  <div class="floating-container">
+    <h1>
+      <a href="#filter-label" class="floating-button">
+        <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" fill="none">
+          <title>up</title>
+          <path d="M11 10.4L6.11253 15.2875C5.72003 15.68 5.08281 15.6771 4.69381 15.2812C4.30964 14.8902 4.31241 14.2626 4.70003 13.875L11.2669 7.3081C11.6718 6.9032 12.3282 6.9032 12.7331 7.3081L19.3 13.875C19.6876 14.2626 19.6904 14.8902 19.3062 15.2812C18.9172 15.6771 18.28 15.68 17.8875 15.2875L13 10.4L12 9.375L11 10.4Z" fill="currentColor"></path>
+        </svg>
+      </a>
+    <h1>
+  </div>
+</section>  
+
+
+
+
+
+  <!-- 
+  <section>
+    <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-Signs</h1></div>
+    <div>
+      <main>
+        <iframe 
+         src="https://drive.google.com/file/d/1UEyFqhfyy7LrXW69k2i3LukiS8reZmuL/preview?autoplay=1"  height="550vh" width="100%" style="margin:0; background-color: black;">
+        </iframe>
+    </main>
+    </div>
+  </section>
+-->
+  <!--Signs-->
+  <section id="Signs">
+    <div>
+      <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-Signs</h1></div>
+    <div>
+      <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+        <iframe autoplay mute loop src="https://drive.google.com/file/d/1EAYtjEzpyQPWVHhjeTRPl9WcW5QYlZid/preview" height="720px" width="100%"></iframe>
+      </main>
+    </div>
+  </section>
+
+  <!--Fire-->
+  <section id="Fire">
+    <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-Fire</h1></div>
+    <div>
+      <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+        <iframe autoplay mute loop src="https://drive.google.com/file/d/1uhe1xmrmbvmKnFSQOVTsGHmUWUjTSAWT/preview" height="720px" width="100%"></iframe>
+      </main>
+    </div>
+  </section>
+
+  <!--Waste management-->
+  <section id="Waste management">
+    <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-Waste management</h1>
+    </div>
+    <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+      <iframe autoplay mute loop src="https://drive.google.com/file/d/1KNCUAGekOjmQngB29jk7FImlDZ7NcTXG/preview" height="720px" width="100%"></iframe>
+    </main>
+    </div>
+  </section>
+
+   <!--PPE-->
+   <section id="PPE">
+    <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-PPE</h1></div>
+    <div>
+      <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+      <iframe autoplay mute loop src="https://drive.google.com/file/d/1EFFIunb5wMcYb_FtvcVeUUayoUqUJTJ9/preview" height="720px" width="100%"></iframe>  
+    </main>
+    </div>
+  </section>
+
+   <!--Rescue operation-->
+   <section id="Rescue operation">
+    <div style="color: black; background-color: black;"><h1 style="color: #fff; padding-left: 20px; padding-top: 4vh;">Safety-Rescue operation</h1></div>
+    <div>
+      <main style="padding: 0%; margin: 0%; padding-top: 0%; padding-bottom: 0%;">
+      <iframe autoplay mute loop src="https://drive.google.com/file/d/1XQzcJhf8LK-IMLR2vMYE8UXEYuBZlIFI/preview" height="720px" width="100%"></iframe>  
+    </main>
+    </div>
+  </section>
+
+
+    
+
+  
+
+
+<script src="https://www.drv.tw/inc/wd.js?s=z3gihg1o9wokr3cvz2k52q"></script></body>
+</html>
